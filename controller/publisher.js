@@ -1,4 +1,4 @@
-const mqttService = require("../service/mqttService");
+const mqttService = require("../service/mqtt-service");
 
 // Change this to point to your MQTT broker
 const MQTT_HOST_NAME = "mqtt://127.0.0.1:1883";

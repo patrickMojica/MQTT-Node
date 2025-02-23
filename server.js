@@ -12,8 +12,8 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/subscriber", subscriberRouter);
-app.use("/publisher", publisherRouter);
+app.use("/subscribe", subscriberRouter);
+app.use("/publish", publisherRouter);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
