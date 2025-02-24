@@ -1,6 +1,6 @@
 exports.getSubscriberPage = async function (req, res) {
     try {
-      res.render("pages/subscriber");
+      res.render("./subscriber");
     } catch (error) {
       console.log(error);
       res

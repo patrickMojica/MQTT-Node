@@ -9,7 +9,11 @@ class MQTTService {
     }
 
     connect() {
-        this.mqttClient = mqtt.connect(this.host);
+
+        this.mqttClient = mqtt.connect(this.host, {
+            username: 'user1',
+            password: 'user1'
+        });
     
         // MQTT Callback for 'error' event
         this.mqttClient.on("error", (err) => {
