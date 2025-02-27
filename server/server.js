@@ -4,6 +4,7 @@ const app = express();
 // const cors = require('cors');
 // const dotenv = require('dotenv');
 // const PORT = process.env.PORT || 3000;
+
 // router API
 const router = require('./api');
 const port = 3000;
@@ -35,9 +36,6 @@ app.use((err, req, res, next) => {
   return res.status(errorObj.status).json(errorObj.message);
 });
 
-
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
-
-//module.exports = app;
