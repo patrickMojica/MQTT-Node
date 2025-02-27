@@ -1,7 +1,8 @@
 import React from 'react';
 import './ValveSwitch.css';
 
-const ValveSwitch = ({ isOn, handleToggle }) => {
+const ValveSwitch = ({ isOn, handleToggle, onColor }) => {
+
   return (
     <>
       <input
@@ -12,7 +13,8 @@ const ValveSwitch = ({ isOn, handleToggle }) => {
         type="checkbox"
       />
       <label
-        style={{ background: isOn && '#06D6A0' }}
+        // style={{ background: isOn && '#06D6A0' }}
+        style={{ background: isOn && onColor }}
         className="react-switch-label"
         htmlFor={`react-switch-new`}
       >

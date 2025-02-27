@@ -3,8 +3,9 @@ const router = express.Router();
 
 var publisherController = require("../controller/publisher");
 
-router.get("/", publisherController.getPublisherPage);
+// router.post("/api/publish", publisherController.publishMQTTMessage);
 
-router.post("/", publisherController.publishMQTTMessage);
+// router.get("/", publisherController.getPublisherPage);
+
 
 module.exports = router;
